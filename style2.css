@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0%;
+    box-sizing:  border-box;
+}
+body{
+    min-height: 100vh;
+    background: #c1192c;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: rgb(82, 253, 82);
+    border: 2px black solid;
+    border-radius: 25%;
+    padding-top: 200px;
+
+}
+.liste-horaires .h2{
+    text-align: center;
+}
+.programmes{
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+div .liste-horaires{
+    width: 400px;
+    margin: 150px;
+    background-color: turquoise;
+    border-radius: 0  20%;
+    
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #1ca5aa;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+     0 0 50px #4fdcc5,
+     0 0 100px #dcda4f;
+     animation: 15s linear infinite;
+     animation-duration: calc( 125s / var(--i));
+}
+.bubbles span:nth-child(::-webkit-meter-even-less-good-value)
+{   background: #ff2d75;
+    box-shadow: 0 0 0 10px #e9427d44,
+    0 0 50px #ff2de3,
+    0 0 100px #ff2d75;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(10vh) scale(1);
+    }
+}
